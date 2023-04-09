@@ -12,3 +12,8 @@ const anySingle = /.{4}/
 
 
 console.log(symbols.match(anySingle));
+
+const areaCodev2 = /\(...\)/ 
+const phoneNumberFake = "($%¨) 555-1234" 
+console.log(phoneNumber1.match(areaCodev2)); //match area code using correct expression
+console.log(phoneNumberFake.match(areaCodev2)); //demonstrate that the regex will match any character and not just numbers

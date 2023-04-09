@@ -4,6 +4,8 @@
     g - Global
     i - Ignore Case
 */
+
+const sentence  = "I Scream, You Scream, We All Scream for Ice Cream"
  
 const pattern = new RegExp(/,/, "g")
 const commaMatch = sentence.match(/,/g)
