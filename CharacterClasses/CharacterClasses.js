@@ -3,7 +3,7 @@ const addressInfo = "116 Winners Cir Hessmer, Louisiana(LA), 71341"
 const numbersOnly = /[0123456789]/g
 const oddOnly = /[13579]/g
 const evenOnly = /[24680]/g
-const vowels = /[aeiou]/g
+const vowels = /[aeiou]/gi
 console.log(addressInfo.match(numbersOnly));
 console.log(addressInfo.match(oddOnly));
 console.log(addressInfo.match(evenOnly));
