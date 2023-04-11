@@ -5,4 +5,4 @@ const exe2 = ["(202) 555-0187","(410) 555-0132","515-555-0125","303 555 0105",")
 console.log(exe2.join("\n").match(/\(\d{2,3}\)[ ]\d{3,}[\- ]\d{4,}/g));
 
 const exe3 = ["bruno@test.ca","bruno.orsolon@gmail.com","ERRO.ca","cmacgauhy.1@bloomber.co.uk", "teste@email.com.br","afidge_0@friendfeed.us","cmacgauhy.1@bloomberg.org","rhaseley2@ow.ly","i_billiard4@sohu.@","fbrandel3@gmail.com","rgoldring6@timesonline."];
-console.log(exe3.join("\n").match(/[\w.]+@\w+\.\w{2,4}[\w.]{0,3}/g));
+console.log(exe3.join("\n").match(/[\w.]+@\w+\.\w{2,4}(.\w{2,3})?/g));

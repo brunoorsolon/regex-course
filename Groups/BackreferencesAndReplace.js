@@ -5,11 +5,8 @@ const sentence = `
     - Button.ts
 `
 
-console.log(sentence.replace(/(\w+)\.(js|ts)/g, "User$1.$2x"));
+console.log(sentence.match(/(\w+)\.(js|ts)/g));
 
-/* result:
-/src
-    - index.jsx
-    - UserComponent.tsx
-    - Button.tsx
-*/
+console.log(sentence.replace(/\.(js|ts)/g, ".$1x"));
+
+console.log(sentence.replace(/(\w+)\.(js|ts)/g, "User$1.$2x"));
